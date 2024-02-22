@@ -20,6 +20,9 @@ package org.apache.eventmesh.dashboard.console.service;
 
 import org.apache.eventmesh.dashboard.console.entity.PhysicalClusterEntity;
 
+/**
+ *
+ */
 public interface PhyclusterService {
 
     PhysicalClusterEntity add(PhysicalClusterEntity cluster);
