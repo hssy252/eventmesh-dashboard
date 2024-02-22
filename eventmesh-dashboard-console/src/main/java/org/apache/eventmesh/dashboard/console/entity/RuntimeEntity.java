@@ -18,7 +18,6 @@
 package org.apache.eventmesh.dashboard.console.entity;
 
 
-import java.sql.Time;
 import java.sql.Timestamp;
 
 public class RuntimeEntity {
