@@ -46,7 +46,7 @@ public interface ConfigMapper {
     List<ConfigEntity> selectAll(ConfigEntity config);
 
     @Options(useGeneratedKeys = true, keyColumn = "id", keyProperty = "id")
-    @Insert("insert into config (cluster_phy_id, config_type, instance_id,config_properties, config_name, config_value, source, start_version, "
+    @Insert("insert into config(cluster_phy_id, config_type, instance_id,config_properties, config_name, config_value, source, start_version, "
         + "end_version, diff_type, create_time, update_time) VALUES(#{clusterPhyId},#{configType},#{instanceId},"
         + "#{configProperties},#{configName},#{configValue},#{source},#{startVersion},#{endVersion},#{diffType},#{createTime},#{updateTime}) ")
     void insertConfig(ConfigEntity config);
