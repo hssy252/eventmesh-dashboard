@@ -23,6 +23,7 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
+
   <modelVersion>4.0.0</modelVersion>
   <packaging>pom</packaging>
 
@@ -34,23 +35,26 @@
 
   <groupId>org.apache.eventmesh.dashboard</groupId>
   <artifactId>eventmesh-dashboard</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+
+  <version>0.0.1</version>
 
   <name>eventmesh-dashboard</name>
   <description>eventmesh-dashboard</description>
-  <url>https://github.com/apache/eventmesh-dashboard</url>
+  <url>https://github.com/apache/pulsar</url>
 
   <organization>
     <name>Apache Software Foundation</name>
-    <url>https://www.apache.org/</url>
+    <url>http://www.apache.org/</url>
   </organization>
-  <inceptionYear>2021</inceptionYear>
+  <inceptionYear>2017</inceptionYear>
+
   <developers>
     <developer>
-      <organization>Apache EventMesh developers</organization>
-      <organizationUrl>https://eventmesh.apache.org/</organizationUrl>
+      <organization>Apache eventmesh developers</organization>
+      <organizationUrl>http://eventmesh.apache.org/</organizationUrl>
     </developer>
   </developers>
+
   <licenses>
     <license>
       <name>Apache License, Version 2.0</name>
@@ -58,7 +62,7 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
-  <scm>
+    <scm>
     <url>https://github.com/apache/eventmesh-dashboard</url>
     <connection>scm:git:https://github.com/apache/eventmesh-dashboard.git</connection>
     <developerConnection>scm:git:ssh://git@github.com:apache/eventmesh-dashboard.git</developerConnection>
@@ -66,7 +70,7 @@
 
   <ciManagement>
     <system>GitHub Actions</system>
-    <url>https://github.com/apache/eventmesh-dashboard/actions</url>
+    <url>https://github.com/apache/puleventmesh-dashboardsar/actions</url>
   </ciManagement>
 
   <issueManagement>
@@ -75,13 +79,11 @@
   </issueManagement>
 
   <properties>
-    <maven.compiler.source>8</maven.compiler.source>
-    <maven.compiler.target>8</maven.compiler.target>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <spring-boot.version>2.7.6</spring-boot.version>
-    <mybatis-spring-boot.version>2.3.2</mybatis-spring-boot.version>
-  </properties>
 
+  </properties>
   <modules>
     <module>eventmesh-dashboard-console</module>
     <module>eventmesh-dashboard-observe</module>
@@ -89,20 +91,6 @@
     <module>eventmesh-dashboard-service</module>
     <module>eventmesh-dashboard-common</module>
   </modules>
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-dependencies</artifactId>
-        <version>${spring-boot.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.mybatis.spring.boot</groupId>
-        <artifactId>mybatis-spring-boot-starter</artifactId>
-        <version>${mybatis-spring-boot.version}</version>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
+
+
 </project>
