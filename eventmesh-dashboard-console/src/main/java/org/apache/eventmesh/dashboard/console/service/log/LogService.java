@@ -15,9 +15,24 @@
  * limitations under the License.
  */
 
-package org.apache.eventmesh.dashboard.service;
+package org.apache.eventmesh.dashboard.console.service.log;
 
-public class Main {
-    public static void main(String[] args) {
-    }
+import org.apache.eventmesh.dashboard.console.entity.log.LogEntity;
+
+import java.util.List;
+
+/**
+ *
+ * operation service
+ *
+ */
+
+public interface LogService {
+
+    List<LogEntity> getLogListByCluster(LogEntity logEntity);
+
+    Long addLog(LogEntity logEntity);
+
+    Integer updateLog(LogEntity logEntity);
+
 }

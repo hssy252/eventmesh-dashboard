@@ -15,9 +15,19 @@
  * limitations under the License.
  */
 
-package org.apache.eventmesh.dashboard.service;
+package org.apache.eventmesh.dashboard.console.annotation;
 
-public class Main {
-    public static void main(String[] args) {
-    }
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.METHOD)
+public @interface EmLog {
+
+    String OprType() default "";
+
+    String OprTarget() default "";
+
 }

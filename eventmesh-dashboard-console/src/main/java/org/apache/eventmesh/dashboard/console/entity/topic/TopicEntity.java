@@ -15,9 +15,36 @@
  * limitations under the License.
  */
 
-package org.apache.eventmesh.dashboard.service;
+package org.apache.eventmesh.dashboard.console.entity.topic;
 
-public class Main {
-    public static void main(String[] args) {
-    }
+import java.sql.Timestamp;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class TopicEntity {
+    private Long id;
+
+    private Long clusterId;
+
+    private String topicName;
+
+    private String runtimeId;
+
+    private String storageId;
+
+    private Long retentionMs;
+
+    private Integer type;
+
+    private String description;
+
+    private Timestamp createTime;
+
+    private Timestamp updateTime;
+
 }
